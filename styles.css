@@ -1,0 +1,331 @@
+body {
+    background: url(IMAGES/depositphotos_93416236-stock-illustration-bright-festive-background.jpg) center;
+    font-family: Arial, sans-serif;
+    background-color: #1e792c;
+    /* Set the background color to a festive gold/yellow */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Animate the text within the h1 element */
+#animatedText {
+    display: inline-block;
+    -webkit-animation: wiggle 2s ease-in-out infinite, colorChange 10s linear infinite;
+    animation: wiggle 2s ease-in-out infinite, colorChange 10s linear infinite;
+}
+
+/* Define the wiggle animation */
+@-webkit-keyframes wiggle {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    25% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+
+    50% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+
+    75% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+}
+
+@keyframes wiggle {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    25% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+
+    50% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+
+    75% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+}
+
+/* Define the color change animation */
+@-webkit-keyframes colorChange {
+
+    0%,
+    100% {
+        color: #FF1493;
+        /* Starting color (Pink) */
+    }
+
+    25% {
+        color: #FFD700;
+        /* Yellow */
+    }
+
+    50% {
+        color: #00FF00;
+        /* Green */
+    }
+
+    75% {
+        color: #0000FF;
+        /* Blue */
+    }
+}
+
+@keyframes colorChange {
+
+    0%,
+    100% {
+        color: #FF1493;
+        /* Starting color (Pink) */
+    }
+
+    25% {
+        color: #FFD700;
+        /* Yellow */
+    }
+
+    50% {
+        color: #00FF00;
+        /* Green */
+    }
+
+    75% {
+        color: #0000FF;
+        /* Blue */
+    }
+}
+
+.lab {
+    font-weight: bold;
+    color: #36a00c;
+    font-size: 28px;
+}
+
+.box {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-transition: border-color 0.3s, -webkit-box-shadow 0.3s;
+    transition: border-color 0.3s, -webkit-box-shadow 0.3s;
+    -o-transition: border-color 0.3s, box-shadow 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+    height: 18px;
+    /* You can adjust the height as needed */
+}
+
+
+h1 {
+    font-weight: bolder;
+    font-size: 24px;
+    color: #834216;
+}
+
+h1 span {
+    font-weight: bolder;
+    color: #0c3386;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    margin-top: 20px;
+}
+
+#name input[type="text"] {
+    width: 2000px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-transition: border-color 0.3s, -webkit-box-shadow 0.3s;
+    transition: border-color 0.3s, -webkit-box-shadow 0.3s;
+    -o-transition: border-color 0.3s, box-shadow 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+    height: 40px;
+    /* You can adjust the height as needed */
+}
+
+
+#submitButton {
+    background-color: #0f40f0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#submitButton:hover {
+    background-color: #101820;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+input[type="text"]:focus {
+    border-color: #19e073;
+    -webkit-box-shadow: 0 0 5px rgba(15, 64, 240, 0.2);
+    box-shadow: 0 0 5px rgba(15, 64, 240, 0.2);
+}
+
+#greeting {
+    font-size: 24px;
+    color: #0f40f0;
+    margin-top: 20px;
+    font-weight: bold;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.5s ease-in-out;
+    -o-transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
+}
+
+#greeting.show {
+    max-height: 100px;
+    /* Adjust the height as needed for the animation */
+}
+
+/* Define the entrance animation */
+@-webkit-keyframes entranceAnimation {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    30% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+
+    60% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        opacity: 0.9;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes entranceAnimation {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    30% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+
+    60% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        opacity: 0.9;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Apply the entrance animation to the dashain image */
+.dashain-image {
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    -webkit-animation: entranceAnimation 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation: entranceAnimation 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    /* Use cubic-bezier for a captivating entrance */
+}
+
+button {
+    background-color: #0f40f0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0bb134;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* Define the explosion animation */
+@-webkit-keyframes explode {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes explode {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* Apply the explosion animation to the dashain image when the "blasted" class is added */
+.dashain-image.blasted {
+    -webkit-animation: explode 0.5s ease-in-out;
+    animation: explode 0.5s ease-in-out;
+}
